@@ -22,6 +22,6 @@ and I am not looking back.  My friends say "hey...Christmas is for kids!"..but I
 {% highlight ruby linenos %}
 def say_hello_rails
 puts "Hi there!"
-puts "Every language seems to have a puts.  If it were only that easy"
+puts "Every language seems to have a puts."
 end
 {% endhighlight %}
