@@ -10,3 +10,8 @@ img.center {
 p.clear {
     clear: both;
 }
+
+.sidebartag {
+  color: #1619ff;
+  font-size: 1.65em;
+}

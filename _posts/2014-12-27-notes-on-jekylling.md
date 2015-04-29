@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Notes on Jekylling
+category: jekyll
 ---
 <div class="message">
   <cite>Tidbits and good references for your Jekyll based blog</cite>
@@ -23,4 +24,3 @@ How to get started using the lanyon jekyll fork from the guy who created it.
 </p>
 
 
-  

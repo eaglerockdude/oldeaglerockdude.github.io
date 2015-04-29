@@ -10,8 +10,8 @@ relative_permalinks: true
 
 # Setup
 title:               Ruby on Rails and other forms of transportation
-tagline:             ''
-description:         'Personal mostly ROR blog'
+tagline:           Tagline
+description:     'Rails and other interests blog'
 #url:                 http://kenmcfadden.com
 baseurl:             /
 # enable pagination and set items per page..

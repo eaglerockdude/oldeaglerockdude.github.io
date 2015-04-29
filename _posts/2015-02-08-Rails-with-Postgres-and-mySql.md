@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rails with Postgres and MySql
-category: Database
+category: database
 ---
 
 <div class="message">
