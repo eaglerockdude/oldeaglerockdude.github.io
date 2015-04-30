@@ -1,6 +1,6 @@
 ---
 layout: post
-title: angularJS
+title: notational velocity 
 category: tools
 ---
 
