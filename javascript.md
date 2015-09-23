@@ -18,10 +18,96 @@ In my mind no developer should be without an understanding of this movement as j
 
 Blogging for the most part in the context of javascript will probably include the following:
 * AngularJS
-   * So many to choose from but this is having the most momentum.
+   * So many frameworks to choose from but this works in a bit different way that for me seems more intuitive. Most of the time
+   I will just "Go with Google" similiar to how you can "Go with Apple"...good companies at the forefront.
 * Functional Programming
     * Javascript in general has so many odd constructs and concepts.  I feel that understanding functional programming as it relates to javascript kills two birds with one stone so to speak.
 
+## NodeJS
+General notes on NodeJS which gets its teeth from being a "non-blocking" framework.
+
+### Modules
+In any large development project code(context javascript) organization and in particular *scope control* is a best practice.  The Nodejs paradigm makes heavy use of
+modules.  
+
+The CommonJS specification is used by node to organize modules and control scope.  Modules can be single files or many modules packaged up.
+
+Code Example assuming module name we need to access is string_util.js with a constructor named StringUtil.  In node a module
+is simply a file.
+
+```javascript
+module.exports = new StringUtil();
+```
+(You could also export the constructor, and create it in a separate step in the require module).
+
+The module.exports exposes all of the functionality of the string_util.js API
+    
+To use/reference the API of this module, you require it.
+
+```javascript
+var strUtil = require("./string_util")
+```
+Node.js supports three main types of modules: core modules, user modules, and third-party modules.
 
 
+This is a simple illustration.  There is much more to modules which can be found at [Node Module Documentation](https://nodejs.org/api/modules.html)
 
+### Node Package Manager (NPM)
+Node.js has a way of browsing, querying, installing, and publishing third-party modules into a central repository,
+ and it's called NPM. NPM stands for Node Package Manager, and it consists of two things:
+
+- A module repository that is fully browsable, accessible at [https://npmjs.org](https://npmjs.org).  And 
+- A command-line utility
+
+The NPM repository contains a vast and growing collection of modules that were built by the community.
+ Since that repository is fully browsable and searchable, you can use it to track down and inspect modules 
+ that may be interesting for building your application with.
+
+### package.json
+Node uses this json file as a manifest similar to how rails uses a GEMFILE. It declares what modules your app
+needs, and NPM will use with *NPM install*.  NPM will analyze the modules and their dependencies, and download
+them. (Example)
+
+```json
+{
+    "name": "my-example-app",
+    "version": "0.1.0",
+    "dependencies": {
+        "request": "*",
+        "nano": "3.3.x",
+        "async": "~0.2"
+    }
+}
+```
+By default, NPM installs the dependencies locally inside a directory named *Node_modules*. Node.js will look for this directory 
+when you use *require(module name)* and will look for the module there.
+
+### The callback pattern
+
+Here is a very common callback pattern used in Node.  Its an example of reading a file, and also checking for an error. In
+the Node case, the result gets executed by the callback when its ready.  The callback is always the last parm.
+
+Blocking IO
+
+```javascript
+try {
+    var result = query('SELECT * FROM articles');
+    console.log('result:', result);
+} catch(err) {
+console.error('error while performing query:', err.message);
+}
+```
+
+Non-IO-Blocking with callback last parm
+
+```javascript
+query('SELECT * FROM articles', function(err, result) {
+    if (err) {
+        console.error('error while performing query:', err.message);
+    } else {
+        console.log('result:', result);
+    }
+});
+```
+The callback expects an error as the first argument, which is nil is there is no error. If there is an
+error, it is a javascript err object.

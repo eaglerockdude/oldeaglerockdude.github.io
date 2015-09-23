@@ -9,9 +9,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Ruby on Rails and other forms of transportation
-tagline:          Thoughts on programming
-description:   'Rails and other interests blog'
+title:         Ruby on Rails and other forms of transportation
+tagline:       Notes on code
+description:  'Rails and other interests blog'
 #url:                 http://kenmcfadden.com
 baseurl:             /
 # enable pagination and set items per page..
@@ -25,3 +25,6 @@ author:
 
 # Custom vars
 version:             1.0.0
+
+kramdown:
+  input: GFM
