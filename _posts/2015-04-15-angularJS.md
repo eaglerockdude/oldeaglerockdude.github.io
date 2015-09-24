@@ -5,7 +5,7 @@ category: angular
 ---
 
 <div class="message">
-  <cite> "It's tax day..my printer ran out of in as usual...oh yes...angular!..." </cite>
+  <cite> "It's tax day..my printer ran out of ink as usual...oh yes...angular!..." </cite>
 </div>
 
 I have delved some with Handlebars, Mustache..well...I get them confused..they all have the mustaches right?  Sometimes I think
@@ -29,7 +29,7 @@ angularApp.controller('mainController', ['$scope', function ($scope) {
 
 {% endhighlight %}
 
-## Terminology  
+## Terminology
 - ng-app  (directive attaches application module to the page )
 
 - ng-controller   (directive attaches a controller function to the page)
