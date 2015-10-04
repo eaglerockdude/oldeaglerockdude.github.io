@@ -26,7 +26,24 @@ or in a sense flow also to stay alive.
   ( Rob Miller - Text Processing with ruby blog.)
 
 
+### The Shebang
 
+Ever wonder how it is that you can just enter commands in the shell and they run?  Well within the context of a ruby script, to do that you need to do the following.
+
+ - At the top of your script, put the *shebang*  with the following format, which allows us to call our script directly without prefixing the call with  *ruby*.
+
+```
+ #!/usr/bin/env ruby
+```
+The unix ENV command tells the shell to use ruby, and to *locate* it as different systems might have it in different places.
+
+- Make sure the file is executable in terms of authority.  One version of CHMOD to do that is as follows:
+
+```
+ $ chmod +x  scriptname
+```
+
+- To be able to call your script from anywhere, put it in a directory within your path.  A common place might be */usr/local/bin*
  [1]: https://robm.me.uk/text-processing-with-ruby/
 
 
