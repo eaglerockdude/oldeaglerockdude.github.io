@@ -6,7 +6,8 @@ title: Javascript
 <p>
 In addition to Rails and Ruby, this blog is about javascript.  As you know, ROR is the domain of the "back-end" and while you can accomplish javascript
 type things with a templating language(ajax, buttons, you name it) the bottom line is everything is moving to javascript and related frameworks.  In particular,
-Node.js, which is a framework with a non-blocking I/O event model. Basically it's much faster with big loads.  I would think however
+Node.js, which is a framework with a non-blocking I/O event model. Ever since I read about HTML5/Websockets, I figured
+the lifetime or ROR was limited...well hope not! Basically it's much faster with big loads.  I would think however
 that only the biggest of companies(Walmart etc) would really need this kind of performance.  For the vast majority
 of websites, a framework like ROR will suffice.
 </p>
@@ -16,19 +17,14 @@ In my mind no developer should be without an understanding of this movement as j
 
 ## Areas of interest
 
-Blogging for the most part in the context of javascript will probably include the following:
-* AngularJS
-   * So many frameworks to choose from but this works in a bit different way that for me seems more intuitive. Most of the time
-   I will just "Go with Google" similiar to how you can "Go with Apple"...good companies at the forefront.
-* Functional Programming
-    * Javascript in general has so many odd constructs and concepts.  I feel that understanding functional programming as it relates to javascript kills two birds with one stone so to speak.
+* Node Node Node
 
 ## NodeJS
 General notes on NodeJS which gets its teeth from being a "non-blocking" framework.
 
 ### Modules
 In any large development project code(context javascript) organization and in particular *scope control* is a best practice.  The Nodejs paradigm makes heavy use of
-modules.  
+modules.
 
 The CommonJS specification is used by node to organize modules and control scope.  Modules can be single files or many modules packaged up.
 
@@ -41,7 +37,7 @@ module.exports = new StringUtil();
 (You could also export the constructor, and create it in a separate step in the require module).
 
 The module.exports exposes all of the functionality of the string_util.js API
-    
+
 To use/reference the API of this module, you require it.
 
 ```javascript
@@ -56,11 +52,11 @@ This is a simple illustration.  There is much more to modules which can be found
 Node.js has a way of browsing, querying, installing, and publishing third-party modules into a central repository,
  and it's called NPM. NPM stands for Node Package Manager, and it consists of two things:
 
-- A module repository that is fully browsable, accessible at [https://npmjs.org](https://npmjs.org).  And 
+- A module repository that is fully browsable, accessible at [https://npmjs.org](https://npmjs.org).  And
 - A command-line utility
 
 The NPM repository contains a vast and growing collection of modules that were built by the community.
- Since that repository is fully browsable and searchable, you can use it to track down and inspect modules 
+ Since that repository is fully browsable and searchable, you can use it to track down and inspect modules
  that may be interesting for building your application with.
 
 ### package.json
@@ -79,7 +75,7 @@ them. (Example)
     }
 }
 ```
-By default, NPM installs the dependencies locally inside a directory named *Node_modules*. Node.js will look for this directory 
+By default, NPM installs the dependencies locally inside a directory named *Node_modules*. Node.js will look for this directory
 when you use *require(module name)* and will look for the module there.
 
 ### The callback pattern
