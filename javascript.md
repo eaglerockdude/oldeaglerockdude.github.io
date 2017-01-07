@@ -10,6 +10,11 @@ Node.js, which is a framework with a non-blocking I/O event model. Ever since I 
 the lifetime or ROR was limited...well hope not! Basically it's much faster with big loads.  I would think however
 that only the biggest of companies(Walmart etc) would really need this kind of performance.  For the vast majority
 of websites, a framework like ROR will suffice.
+
+Addendum: since I first wrote the above paragraph javascript has continued its
+"trending" pace.  I believe now that the future of rails will be more in the building
+of backend logic, and the front end will be optimized and beautified with some kind
+of javascript code via some framework.  Time will tell.
 </p>
 <p>
 In my mind no developer should be without an understanding of this movement as javascript exists in every browser and web application in existence.
@@ -17,14 +22,20 @@ In my mind no developer should be without an understanding of this movement as j
 
 ## Areas of interest
 
+* Design Patterns 
+
+
 * Node Node Node
 
 ## NodeJS
 General notes on NodeJS which gets its teeth from being a "non-blocking" framework.
 
 ### Modules
-In any large development project code(context javascript) organization and in particular *scope control* is a best practice.  The Nodejs paradigm makes heavy use of
-modules.
+Unlike ruby javascript only has function scope.  This feature is used by way of creating
+functions and closures to create "self contained" objects which will exist within
+their own namespaces, which is the goal of modules in JS.
+
+
 
 The CommonJS specification is used by node to organize modules and control scope.  Modules can be single files or many modules packaged up.
 
