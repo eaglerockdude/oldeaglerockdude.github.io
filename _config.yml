@@ -6,7 +6,7 @@ highlighter:         pygments
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
+#relative_permalinks: true      took out 1/7/17 build error via github
 
 # Setup
 title:         Ruby on Rails and other forms of transportation
