@@ -9,9 +9,9 @@ permalink:           pretty
 #relative_permalinks: true      took out 1/7/17 build error via github
 
 # Setup
-title:         Ruby on Rails and other forms of transportation
+title:         ken mcfadden / {"Dad":"1", "Learner":"2", "Developer-Coder":"3"}
 tagline:       Notes on code
-description:  'Rails and other interests blog'
+description:  'Rails and iSeries/midrange notes.'
 #url:                 http://kenmcfadden.com
 baseurl:             /
 # enable pagination and set items per page..

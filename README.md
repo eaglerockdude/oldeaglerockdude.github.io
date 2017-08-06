@@ -1,9 +1,12 @@
 # Jekyll Blog based on Lanyon
 
-As part of my Ruby on Rails Bootcamp course it was suggested that we start a blog.  Initially I had a wordpress blog where I kept notes on
-class exercises.
+Hello
 
-Things like Sinatra, Ajax, Ruby nuances and of course Rails.
+My name is Ken McFadden.  I am a Los Angeles/Southern California based iseries and ruby on rails developer.
 
-Read my post  if interested as to why I switched to a Jekyll based blog.
+This blog is a repository of things related to programming both in the as/400 and open source realms.
+
+Like most developers I know more than one language, and I have two resumes online.  One for As/400- iSeries, and one for Ruby on Rails/Ruby.
+
+I am most experienced on iSeries.
 
