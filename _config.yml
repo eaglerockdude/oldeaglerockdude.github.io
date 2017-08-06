@@ -1,5 +1,6 @@
 # Dependencies
-markdown:            redcarpet
+#markdown:            redcarpet     (redcarpet has been deprecated 8/2017)
+markdown: kramdown
 highlighter:         pygments
 
 # Permalinks
