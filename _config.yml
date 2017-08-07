@@ -10,7 +10,7 @@ permalink:           pretty
 #relative_permalinks: true      took out 1/7/17 build error via github
 
 # Setup
-title:         ken mcfadden / {"Dad":"1", "Learner":"2", "Developer-Coder":"3"}
+title:         ken mcfadden / {"Dad":"1", "Learner":"2", "Developer":"3"}
 tagline:       Notes on code
 description:  'Rails and iSeries/midrange notes.'
 #url:                 http://kenmcfadden.com
