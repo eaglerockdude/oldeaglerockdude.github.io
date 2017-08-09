@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AS/400 Resume
+title: AS400 Resume
 ---
 
 <img class="left" src="/public/sys38.jpg">
